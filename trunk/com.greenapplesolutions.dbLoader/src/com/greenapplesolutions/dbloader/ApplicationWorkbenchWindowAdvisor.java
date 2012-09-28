@@ -12,6 +12,8 @@ import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
+import util.JTLogger;
+
 import com.greenapplesolutions.dbloader.editors.FileLoader;
 
 import editorInput.FileLoaderInput;
@@ -34,6 +36,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(false);
 		configurer.setTitle("Db Loader");
-		
+		JTLogger.getInstance().setError("Hello");
 	}
 }
